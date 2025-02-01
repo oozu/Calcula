@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JFW8QC0RF6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JFW8QC0RF6');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="Calcula tu Promedio de semestre" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Aplicación para calcular el promedio de notas de semestre de un estudiante universitario" />
+    <meta name="description" content="Aplicación para calcular el promedio de notas de semestre de un estudiante universitario" />
+    <meta name="author" content="">
+    <meta name="keywords" content="P">
+    <link rel="shortcut icon" href="JURISTA.png">
+    <title>Calcula tu Promedio de semestre</title>
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5223283140468185"
+     crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=138582546256590";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="container">
+      <div id="header-banner" class="row page-header">
+        <div class="col-md-8">
+          <h1>Promedio de notas de Semestre</h1>
+          <p class="lead lead-18">Calcula tu Promedio de semestre.</p>
+        </div>
+        <img src="" alt="">
+        <div class="col-md-4">
+        </div>
+      </div>
+      <!-- ads -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5223283140468185"
+     crossorigin="anonymous"></script>
+<!-- Display_Header -->
+ <div class="ads-1">
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5223283140468185"
+     data-ad-slot="2445498269"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+      </div>
+      <div class="row line-separator"></div>
+      <div id="form-container">
+          <form id="f">
+              <table id="tablaUsuarios" class="table table-bordered" >
+                <tbody>
+                  <tr>
+                      <th class="w20">Materia</th>
+                      <th>Nota <sup>*</sup></th>
+                      <th>Num. Creditos <sup>*</sup></th>
+                      <th class="w20">Acciones</th>
+                  </tr>
+                </tbody>
+              </table>
+              <div id="" class="text-right">
+                  <button type="button" id="guardar" class="btn btn-success btn-lg" ><span class="t"></span> Calcular Promedio</button>
+              </div>
+              <div id="result" class="center80">
+                  0.0
+              </div>
+              <div id="messageGif" class="center80"></div>
+              <div id="message" class="center80"></div>
+              <div id="showCalc" class="center80">
+                <a href="#">ver c&aacute;lculo</a>
+                <div>.....</div>
+              </div>
+              <div id="missingGradeMessage" class="center80"></div>
+
+          </form>
+      </div>
+      <div class="center80">
+        
+      </div>
+    </div> <!-- /container -->
+    <script type="text/template" id="materiaTpl">
+    {% for m in materias %}
+      <tr>
+          <td><input name='materia[]' type='text' size='15' placeholder='Materia' value="{{ m.nombre }}" /></td>
+          <td><input name='nota[]' type='text' min='0' max='5' size='10' placeholder='Nota' value="{{ m.nota }}" required {{ m.autofocus }}  class='grade input-number' /></td>
+          <td><input name='creditos[]' type='text' size='10' placeholder='Num. creditos' value="{{ m.creditos }}" required class="input-number" /></td>
+          <td><a href='#' class='btn btn-primary btn-small new-subject' title='Agregar otra materia'>
+          <span class='glyphicon glyphicon-plus'></span></a>
+          <button type='button' class='btn btn-danger btn-small remove-subject' title='Borrar esta materia'><span class='glyphicon glyphicon-remove'></span></button></td>
+      </tr>
+    {% endfor %}
+    </script>
+    <div class="ads-2">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5223283140468185"
+     crossorigin="anonymous"></script>
+<!-- Display_Footer -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5223283140468185"
+     data-ad-slot="5211262404"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+    <footer class="footer bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Columna de Información -->
+          <div class="col-md-4">
+            <h5>Sobre Nosotros</h5>
+            <p>Somos un equipo dedicado a ofrecer herramientas útiles para estudiantes universitarios. Nuestra misión es facilitar el cálculo de promedios de notas, ayudando a nuestros usuarios a organizar mejor su rendimiento académico.</p>
+            <p><a href="https://calculatupromedio.com" class="text-light">Visita nuestro sitio web</a></p>
+          </div>
+    
+          <!-- Columna de Enlaces Rápidos -->
+          <div class="col-md-4">
+            <h5>Enlaces Rápidos</h5>
+            <ul class="list-unstyled">
+              <li><a href="#!" class="text-light">Inicio</a></li>
+              <li><a href="#!" class="text-light">Calculadora de Promedio</a></li>
+              <li><a href="#!" class="text-light">Acerca de</a></li>
+              <li><a href="#!" class="text-light">Contacto</a></li>
+            </ul>
+          </div>
+    
+          <!-- Columna de Redes Sociales -->
+          <div class="col-md-4">
+            <h5>Síguenos</h5>
+            <div class="social-icons">
+              <a href="" class="text-light me-3" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="text-light me-3" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="text-light me-3" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="" class="text-light me-3" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <p>© 2025 <a href="https://calculatupromedio.com" class="text-light">Saiph</a>. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+    <script src="js/vendor/jquery-1.8.3.min.js"></script>
+    <script src="js/vendor/swig.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </body>
+</html>
